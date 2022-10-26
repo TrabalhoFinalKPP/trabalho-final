@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+body{
+  font-family: 'Mulish', sans-serif;
+}
+
+.header__container{
+  background-color: red;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+}
+
+.header__row{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 2rem 0 1rem;  
+}
+
+.header__left{
+  display: flex;
+  max-width: 20%;
+  gap: 5rem;
+  background-color: aqua;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__right{
+  display: flex;
+  align-items: center;
+  max-width: 20%;
+  gap: 1rem;
+
+}
+
+.nav__container{
+  padding-top: 70px;
+  background-color: blue;
+  position: fixed;
+  height: 100%;
+  width: 4.5rem;
+  transition: all .1s linear;
+}
+
+.nav__container.expand{
+  width: 12.5rem;
+}
+
+.nav__container ul{
+  padding: 1rem 0;
+  list-style: none;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.nav__container li{
+  display: flex;
+  
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+  margin: 0 0 .7rem 0;
+}
+
+.nav__link{
+  background-color: aliceblue;
+  border-radius: .6rem;
+  padding: .3rem;
+  display: flex;
+  align-items: center;
+  
+  width: 100%;
+}
+.nav__text{
+  display: none;
+  padding-left: 1rem;
+  
+}
